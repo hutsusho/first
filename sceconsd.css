@@ -1,0 +1,77 @@
+body {
+    display: grid;
+    margin: 0;
+    min-height: 1500px;
+    grid-template-rows: 70px 500px 1fr 100px;
+    
+    
+}
+
+.header {
+    display:flex;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.midasi {
+    flex-grow: 1;
+    display:flex;
+    align-items: flex-end;
+    background-color: mediumturquoise;
+    flex-direction: row-reverse;
+}
+.header2 {
+    color:honeydew;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.manko { 
+    display:flex;
+    flex-grow: 2;
+    flex-direction:row-reverse ;
+    align-items: flex-end;
+}
+
+.tinko {
+    margin-right: 50px;
+    font-size: 30px;
+    color:mediumturquoise;
+}
+
+.unti {
+    margin-right: 100px;
+    font-size: 30px;
+    color:mediumturquoise;
+}
+
+main {
+    grid-row: 2 / span 2;
+    grid-column: 1;
+    
+    padding:0 0;
+    margin:0 auto;
+}
+
+.example {
+    position:relative;
+}
+.example p {
+    position: absolute;/*絶対配置*/
+  color:floralwhite;/*文字は白に*/
+  top:20%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  font-weight: bold; /*太字に*/
+  font-size: 70px;/*サイズ2倍*/
+  font-family :Quicksand, sans-serif;
+}
+.example img {
+    width:100%;
+}
+
+footer {
+    grid-row: 4;
+    grid-column: 1;
+    background: #aaa;
+    
+}
